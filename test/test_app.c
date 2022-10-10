@@ -17,7 +17,7 @@
 #include "logger.h"
 
 // Default serial port
-char * port_name = "/dev/ttyACM0";
+char * port_name = "/dev/serial/by-id/usb-FTDI_2611086021011_WE_USB_Plug_82001112-if00-port0";
 
 int main(int argc, char * argv[])
 {
