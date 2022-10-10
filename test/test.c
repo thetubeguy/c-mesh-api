@@ -955,7 +955,7 @@ int Test_runAll()
 int Test_scratchpad()
 {
     // Configure node as a sink
-    setInitialState(APP_ROLE_SINK, 1234, 0x654321, 5, false);
+    setInitialState(APP_ROLE_SINK, 1, 7, 39, true);
 
     // Set app config
     setAppconfig((uint8_t *) "Test scratchpad", 1800, 14);
