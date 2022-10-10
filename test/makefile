@@ -18,7 +18,7 @@ MESH_LIB := $(MESH_LIB_FOLDER)build/mesh_api_lib.a
 CFLAGS  := -std=gnu99 -Wall -Werror
 
 # Targets definition
-MAIN_APP := meshAPItest
+MAIN_APP := ble1test
 
 TARGET_APP := $(BUILDPREFIX)$(MAIN_APP)
 
@@ -33,11 +33,11 @@ CFLAGS  += -D_REENTRANT
 CFLAGS  += -I$(MESH_LIB_FOLDER)platform
 
 # Main app
-SOURCES := $(SOURCEPREFIX)test_app.c
+SOURCES := $(SOURCEPREFIX)ble1.c
 
 # Test cases
-CFLAGS  += -I$(SOURCEPREFIX)
-SOURCES += $(SOURCEPREFIX)test.c
+#CFLAGS  += -I$(SOURCEPREFIX)
+#SOURCES += $(SOURCEPREFIX)test.c
 
 OBJECTS := $(patsubst $(SOURCEPREFIX)%,                     \
                   $(BUILDPREFIX)%,                          \
